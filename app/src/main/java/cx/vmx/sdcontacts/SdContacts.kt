@@ -439,7 +439,7 @@ fun saveVcf(context: Context) {
             val outputStream: OutputStream
             // If there is anything wrong with accessing/writing files, display an error
             try {
-                val outputFile = outputDir!!.createFile("text/vCard", "contacts_$timestamp.vcf")!!
+                val outputFile = outputDir!!.createFile("text/vCard", "contacts.vcf")!!
                 outputStream = context.contentResolver.openOutputStream(outputFile.uri)!!
             } catch (exception: Exception) {
                 directoryError(context)
